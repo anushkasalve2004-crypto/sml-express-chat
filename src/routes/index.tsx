@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Truck, Package, Warehouse, Shield, MapPin, Clock, Headphones, Lock,
   IndianRupee, UserCheck, Radio, Smile, Phone, Mail, MessageCircle,
-  Menu, X, ArrowRight, CheckCircle2, Star, ChevronDown, Facebook,
+  Menu, X, ArrowRight, CheckCircle2, ChevronDown, Facebook,
   Instagram, Linkedin, Twitter, Plane, Container,
 } from "lucide-react";
 
@@ -521,50 +521,6 @@ function WhatsAppBanner() {
   );
 }
 
-// ------------- Testimonials --------------
-function Testimonials() {
-  const items = [
-    { title: "Excellent Service", body: "Safe delivery and on-time transport.", name: "Rajesh K.", role: "Manufacturing" },
-    { title: "Reliable Team", body: "Highly recommended for container transportation.", name: "Priya S.", role: "Exports" },
-    { title: "Professional Support", body: "Very responsive on WhatsApp.", name: "Amit V.", role: "E-commerce" },
-  ];
-  return (
-    <section className="bg-secondary py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">Testimonials</p>
-          <h2 className="mt-3 text-3xl font-black text-brown sm:text-5xl">Loved by businesses across India</h2>
-        </Reveal>
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          {items.map((t, i) => (
-            <Reveal key={t.title} delay={i * 100}>
-              <figure className="flex h-full flex-col rounded-3xl border border-border bg-card p-8 shadow-card transition hover:-translate-y-1 hover:shadow-elegant">
-                <div className="flex gap-1 text-brand">
-                  {Array.from({ length: 5 }).map((_, k) => (
-                    <Star key={k} className="h-5 w-5 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="mt-5">
-                  <p className="text-lg font-bold text-brown">{t.title}</p>
-                  <p className="mt-2 text-muted-foreground">"{t.body}"</p>
-                </blockquote>
-                <figcaption className="mt-auto pt-6 flex items-center gap-3">
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-[image:var(--gradient-brand)] font-black text-brand-foreground">
-                    {t.name[0]}
-                  </span>
-                  <div className="min-w-0">
-                    <p className="truncate font-semibold text-foreground">{t.name}</p>
-                    <p className="truncate text-xs text-muted-foreground">{t.role}</p>
-                  </div>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // ------------- Contact --------------
 function Contact() {
@@ -735,7 +691,6 @@ function HomePage() {
         <WhyUs />
         <Process />
         <WhatsAppBanner />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
