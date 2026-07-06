@@ -505,6 +505,9 @@ function WhatsAppBanner() {
                 No complicated forms. Simply send your transport requirements on WhatsApp and receive a
                 quotation within minutes.
               </p>
+              <p className="mt-3 text-sm text-white/75">
+                If WhatsApp is blocked, call or save: <a href="tel:+919270276792" className="font-semibold underline underline-offset-4">+91 92702 76792</a>
+              </p>
             </div>
             <div className="lg:col-span-2 flex lg:justify-end">
               <a
