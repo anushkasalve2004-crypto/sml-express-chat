@@ -225,6 +225,9 @@ function Hero() {
               Order on WhatsApp
             </a>
           </div>
+          <p className="mt-4 text-sm text-white/70">
+            Or call / WhatsApp directly: <a href="tel:+919270276792" className="font-semibold text-brand underline underline-offset-4">+91 92702 76792</a>
+          </p>
 
         </div>
 
