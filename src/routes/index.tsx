@@ -226,19 +226,6 @@ function Hero() {
             </a>
           </div>
 
-          <dl className="mt-12 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4">
-            {[
-              ["10K+", "Deliveries"],
-              ["500+", "Fleet"],
-              ["28", "States"],
-              ["24×7", "Support"],
-            ].map(([n, l]) => (
-              <div key={l}>
-                <dt className="text-3xl font-black text-brand">{n}</dt>
-                <dd className="text-xs font-medium uppercase tracking-wider text-white/70">{l}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
 
         <div className="lg:col-span-4 hidden lg:flex justify-end">
