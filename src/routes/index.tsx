@@ -226,19 +226,6 @@ function Hero() {
             </a>
           </div>
 
-          <dl className="mt-12 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4">
-            {[
-              ["10K+", "Deliveries"],
-              ["500+", "Fleet"],
-              ["28", "States"],
-              ["24×7", "Support"],
-            ].map(([n, l]) => (
-              <div key={l}>
-                <dt className="text-3xl font-black text-brand">{n}</dt>
-                <dd className="text-xs font-medium uppercase tracking-wider text-white/70">{l}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
 
         <div className="lg:col-span-4 hidden lg:flex justify-end">
@@ -395,19 +382,6 @@ function About() {
             Our mission is simple: your growth, our priority. We combine experienced drivers, live tracking and
             transparent pricing to deliver a modern logistics experience.
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-4">
-            {[
-              ["Since", "2010"],
-              ["Fleet", "500+"],
-              ["States", "28"],
-              ["Rating", "4.9 / 5"],
-            ].map(([k, v]) => (
-              <div key={k} className="rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
-                <p className="text-xs uppercase tracking-widest text-white/60">{k}</p>
-                <p className="mt-1 text-2xl font-black text-brand">{v}</p>
-              </div>
-            ))}
-          </div>
         </Reveal>
 
         <Reveal delay={120}>
