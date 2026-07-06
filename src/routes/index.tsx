@@ -25,18 +25,21 @@ export const Route = createFileRoute("/")({
 });
 
 const WA_PHONE = "919270276792";
-const WA_BASE = `https://wa.me/${WA_PHONE}`;
+const PHONE_TEL = "tel:+919270276792";
+const PHONE_DISPLAY = "+91 92702 76792";
+const waAppUrl = (message: string) =>
+  `whatsapp://send?phone=${WA_PHONE}&text=${encodeURIComponent(message)}`;
 const WA_QUOTE_MSG =
-  "Hello SM Logistics,%0AI would like to book a logistics service.%0A%0AService Required:%0APickup Location:%0ADelivery Location:%0AGoods Type:%0AWeight:%0APreferred Date:%0A%0APlease share the quotation.%0A%0AThank you.";
-const WA_QUOTE_URL = `${WA_BASE}?text=${WA_QUOTE_MSG}`;
-const WA_SIMPLE_URL = `${WA_BASE}?text=${encodeURIComponent(
+  "Hello SM Logistics,\nI would like to book a logistics service.\n\nService Required:\nPickup Location:\nDelivery Location:\nGoods Type:\nWeight:\nPreferred Date:\n\nPlease share the quotation.\n\nThank you.";
+const WA_QUOTE_URL = waAppUrl(WA_QUOTE_MSG);
+const WA_SIMPLE_URL = waAppUrl(
   "Hello SM Logistics,\nI want to book a transport service.\nPlease share the quotation."
-)}`;
+);
 
 const waVehicleUrl = (vehicle: string) =>
-  `${WA_BASE}?text=${encodeURIComponent(
+  waAppUrl(
     `Hello SM Logistics,\nI want to book the ${vehicle}.\n\nPickup Location:\nDelivery Location:\nGoods Type:\nWeight:\nPreferred Date:\n\nPlease share the quotation.`
-  )}`;
+  );
 
 // ------------- Reveal on scroll --------------
 function useReveal<T extends HTMLElement>() {
@@ -124,10 +127,8 @@ function Nav() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-2">
-          <a
-            href={WA_SIMPLE_URL}
-            target="_blank"
-            rel="noreferrer"
+            <a
+              href={WA_SIMPLE_URL}
             className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5 hover:brightness-110"
           >
             <MessageCircle className="h-4 w-4" />
@@ -159,8 +160,6 @@ function Nav() {
             ))}
             <a
               href={WA_SIMPLE_URL}
-              target="_blank"
-              rel="noreferrer"
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant"
             >
               <MessageCircle className="h-4 w-4" /> Book Now on WhatsApp
@@ -207,18 +206,14 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a
-              href={WA_QUOTE_URL}
-              target="_blank"
-              rel="noreferrer"
+              <a
+                href={WA_QUOTE_URL}
               className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-brand)] px-7 py-3.5 text-base font-semibold text-brand-foreground shadow-elegant transition hover:-translate-y-0.5 hover:shadow-glow"
             >
               Get Quote <ArrowRight className="h-5 w-5" />
             </a>
-            <a
-              href={WA_SIMPLE_URL}
-              target="_blank"
-              rel="noreferrer"
+              <a
+                href={WA_SIMPLE_URL}
               className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-7 py-3.5 text-base font-semibold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5 hover:brightness-110"
             >
               <MessageCircle className="h-5 w-5" />
@@ -226,7 +221,7 @@ function Hero() {
             </a>
           </div>
           <p className="mt-4 text-sm text-white/70">
-            Or call / WhatsApp directly: <a href="tel:+919270276792" className="font-semibold text-brand underline underline-offset-4">+91 92702 76792</a>
+            Or call / WhatsApp directly: <a href={PHONE_TEL} className="font-semibold text-brand underline underline-offset-4">{PHONE_DISPLAY}</a>
           </p>
 
         </div>
@@ -350,8 +345,6 @@ function Fleet() {
                   </p>
                   <a
                     href={waVehicleUrl(v.name)}
-                    target="_blank"
-                    rel="noreferrer"
                     className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-card transition hover:-translate-y-0.5 hover:brightness-110"
                   >
                     <MessageCircle className="h-4 w-4" /> Book Now
@@ -506,14 +499,12 @@ function WhatsAppBanner() {
                 quotation within minutes.
               </p>
               <p className="mt-3 text-sm text-white/75">
-                If WhatsApp is blocked, call or save: <a href="tel:+919270276792" className="font-semibold underline underline-offset-4">+91 92702 76792</a>
+                If WhatsApp is blocked, call or save: <a href={PHONE_TEL} className="font-semibold underline underline-offset-4">{PHONE_DISPLAY}</a>
               </p>
             </div>
             <div className="lg:col-span-2 flex lg:justify-end">
               <a
                 href={WA_SIMPLE_URL}
-                target="_blank"
-                rel="noreferrer"
                 className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base font-bold text-whatsapp shadow-elegant transition hover:-translate-y-0.5 animate-pulse-ring"
               >
                 <MessageCircle className="h-6 w-6" />
@@ -531,7 +522,7 @@ function WhatsAppBanner() {
 // ------------- Contact --------------
 function Contact() {
   const items = [
-    { icon: Phone, label: "Phone", value: "+91 92702 76792", href: "tel:+919270276792" },
+    { icon: Phone, label: "Phone", value: PHONE_DISPLAY, href: PHONE_TEL },
     { icon: Mail, label: "Email", value: "smlogistics.mum@gmail.com", href: "mailto:smlogistics.mum@gmail.com" },
     { icon: MapPin, label: "Service Area", value: "PAN India" },
   ];
@@ -573,8 +564,6 @@ function Contact() {
               })}
               <a
                 href={WA_QUOTE_URL}
-                target="_blank"
-                rel="noreferrer"
                 className="inline-flex items-center justify-center gap-3 rounded-full bg-whatsapp px-6 py-4 text-base font-bold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5 hover:brightness-110"
               >
                 <MessageCircle className="h-6 w-6" />
@@ -651,8 +640,6 @@ function Footer() {
           </ul>
           <a
             href={WA_SIMPLE_URL}
-            target="_blank"
-            rel="noreferrer"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5"
           >
             <MessageCircle className="h-4 w-4" /> Book on WhatsApp
@@ -674,8 +661,6 @@ function FloatingWhatsApp() {
   return (
     <a
       href={WA_SIMPLE_URL}
-      target="_blank"
-      rel="noreferrer"
       aria-label="Book on WhatsApp"
       className="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-elegant animate-pulse-ring hover:brightness-110"
     >
