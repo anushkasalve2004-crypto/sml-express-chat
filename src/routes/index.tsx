@@ -8,6 +8,8 @@ import {
 } from "lucide-react";
 
 import heroBanner from "@/assets/hero-banner.jpg";
+import smLogoAsset from "@/assets/sm-logistics-logo.jpeg.asset.json";
+const smLogo = smLogoAsset.url;
 import vPickupAsset from "@/assets/v-pickup.jpg.asset.json";
 import vEicherAsset from "@/assets/v-eicher.jpg.asset.json";
 import vContainerAsset from "@/assets/v-container.jpg.asset.json";
