@@ -8,8 +8,6 @@ import {
 } from "lucide-react";
 
 import heroBanner from "@/assets/hero-banner.jpg";
-import smLogoAsset from "@/assets/sm-logistics-logo.jpeg.asset.json";
-const smLogo = smLogoAsset.url;
 import vPickupAsset from "@/assets/v-pickup.jpg.asset.json";
 import vEicherAsset from "@/assets/v-eicher.jpg.asset.json";
 import vContainerAsset from "@/assets/v-container.jpg.asset.json";
@@ -196,8 +194,8 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-brown/80 via-brown/30 to-transparent" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-32 lg:pt-24">
-        <div className="lg:col-span-8 text-white animate-drive-in">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 pt-14 sm:px-6 lg:gap-12 lg:px-8 lg:pb-32 lg:pt-24">
+        <div className="text-white animate-drive-in">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider backdrop-blur">
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
             PAN India Logistics
@@ -231,19 +229,10 @@ function Hero() {
           <p className="mt-4 text-sm text-white/70">
             Or call / WhatsApp directly: <a href={PHONE_TEL} className="font-semibold text-brand underline underline-offset-4">{PHONE_DISPLAY}</a>
           </p>
-
-        </div>
-
-        <div className="lg:col-span-4 hidden lg:flex justify-end">
-          <div className="animate-float rounded-3xl border border-white/20 bg-white/95 p-8 backdrop-blur-xl shadow-elegant">
-            <img
-              src={smLogo}
-              alt="SM Logistics — Your Growth, Our Priority"
-              className="h-64 w-auto object-contain"
-            />
-          </div>
         </div>
       </div>
+
+
 
 
 
