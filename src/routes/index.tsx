@@ -245,7 +245,7 @@ function Hero() {
         </div>
       </div>
 
-      </div>
+
 
       <a href="#services" className="absolute inset-x-0 bottom-4 mx-auto grid h-10 w-10 place-items-center rounded-full border border-white/30 text-white/80 animate-float">
         <ChevronDown className="h-5 w-5" />
