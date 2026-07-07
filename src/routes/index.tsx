@@ -235,25 +235,16 @@ function Hero() {
         </div>
 
         <div className="lg:col-span-4 hidden lg:flex justify-end">
-          <div className="animate-float rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl shadow-elegant">
-            <div className="flex items-center gap-3 text-white">
-              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-brand shadow-glow">
-                <Plane className="h-6 w-6 text-brand-foreground" />
-              </span>
-              <div>
-                <p className="text-xs uppercase tracking-widest text-white/70">Multi-modal</p>
-                <p className="font-bold">Road · Rail · Air · Sea</p>
-              </div>
-            </div>
-            <ul className="mt-5 space-y-3 text-sm text-white/85">
-              {["Live GPS tracking", "Secure handling", "On-time delivery", "24×7 WhatsApp support"].map((t) => (
-                <li key={t} className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-brand" /> {t}
-                </li>
-              ))}
-            </ul>
+          <div className="animate-float rounded-3xl border border-white/20 bg-white/95 p-8 backdrop-blur-xl shadow-elegant">
+            <img
+              src={smLogo}
+              alt="SM Logistics — Your Growth, Our Priority"
+              className="h-64 w-auto object-contain"
+            />
           </div>
         </div>
+      </div>
+
       </div>
 
       <a href="#services" className="absolute inset-x-0 bottom-4 mx-auto grid h-10 w-10 place-items-center rounded-full border border-white/30 text-white/80 animate-float">
