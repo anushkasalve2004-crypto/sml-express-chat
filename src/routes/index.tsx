@@ -8,12 +8,18 @@ import {
 } from "lucide-react";
 
 import heroBanner from "@/assets/hero-banner.jpg";
-import vPickup from "@/assets/v-pickup.jpg";
-import vEicher from "@/assets/v-eicher.jpg";
-import vContainer from "@/assets/v-container.jpg";
-import vClosed from "@/assets/v-closed.jpg";
-import vTempo from "@/assets/v-tempo.jpg";
-import vTrailer from "@/assets/v-trailer.jpg";
+import vPickupAsset from "@/assets/v-pickup.jpg.asset.json";
+import vEicherAsset from "@/assets/v-eicher.jpg.asset.json";
+import vContainerAsset from "@/assets/v-container.jpg.asset.json";
+import vClosedAsset from "@/assets/v-closed.jpg.asset.json";
+import vTempoAsset from "@/assets/v-tempo.jpg.asset.json";
+import vTrailerAsset from "@/assets/v-trailer.jpg.asset.json";
+const vPickup = vPickupAsset.url;
+const vEicher = vEicherAsset.url;
+const vContainer = vContainerAsset.url;
+const vClosed = vClosedAsset.url;
+const vTempo = vTempoAsset.url;
+const vTrailer = vTrailerAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
