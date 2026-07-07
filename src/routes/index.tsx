@@ -414,14 +414,14 @@ function About() {
 // ------------- Why Choose Us --------------
 function WhyUs() {
   const items = [
-    [MapPin, "PAN India Service"],
-    [Clock, "On-Time Delivery"],
-    [Headphones, "24×7 Support"],
-    [Lock, "Secure Handling"],
-    [IndianRupee, "Affordable Pricing"],
-    [UserCheck, "Experienced Drivers"],
-    [Radio, "Live Tracking"],
-    [Smile, "Customer Satisfaction"],
+    [MapPin, "PAN India Service", "Reliable transportation services covering every corner of India with speed, safety, and efficiency."],
+    [Clock, "On-Time Delivery", "We value your time by ensuring every shipment or cargo reaches its destination as scheduled."],
+    [Headphones, "24×7 Customer Support", "Our dedicated support team is available around the clock to assist you anytime."],
+    [Lock, "Secure Handling", "Your cargo is handled with utmost care to ensure safe and damage-free delivery."],
+    [IndianRupee, "Affordable Pricing", "Competitive and transparent pricing with no hidden charges for every shipment or cargo."],
+    [UserCheck, "Experienced Drivers", "Skilled and professional drivers committed to safe, efficient, and timely transportation."],
+    [Radio, "Live Tracking", "Stay informed with real-time shipment or cargo tracking from pickup to final delivery."],
+    [Smile, "Customer Satisfaction", "Building lasting relationships through reliable service and exceptional customer care."],
   ] as const;
   return (
     <section id="why" className="bg-secondary py-24">
@@ -431,14 +431,14 @@ function WhyUs() {
           <h2 className="mt-3 text-3xl font-black text-brown sm:text-5xl">Eight reasons India moves with us</h2>
         </Reveal>
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map(([Icon, label], i) => (
+          {items.map(([Icon, label, desc], i) => (
             <Reveal key={label} delay={i * 60}>
               <div className="group flex h-full flex-col items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-card transition-all duration-500 hover:-translate-y-1 hover:border-brand/40 hover:shadow-elegant">
                 <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand/10 text-brand transition-all duration-500 group-hover:rotate-6 group-hover:bg-[image:var(--gradient-brand)] group-hover:text-brand-foreground">
                   <Icon className="h-7 w-7" />
                 </span>
                 <p className="text-lg font-bold text-brown">{label}</p>
-                <p className="text-sm text-muted-foreground">Guaranteed and backed by our service promise.</p>
+                <p className="text-sm text-muted-foreground">{desc}</p>
               </div>
             </Reveal>
           ))}
