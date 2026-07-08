@@ -185,17 +185,13 @@ function Nav() {
 function Hero() {
   return (
     <section id="home" className="relative isolate overflow-hidden pt-24">
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 bg-brown">
         <img
-          src={heroBanner}
-          alt="SM Logistics — cargo truck, containers, airplane and warehouse"
-          className="h-full w-full object-cover"
-          width={1920}
-          height={1080}
+          src={smLogo}
+          alt="SM Logistics logo"
+          className="h-full w-full object-contain opacity-20"
         />
-        <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
-        <div className="absolute inset-0 bg-[image:var(--gradient-overlay)] mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brown/80 via-brown/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brown/90 via-brown/60 to-brown/40" />
       </div>
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-32 lg:pt-24">
