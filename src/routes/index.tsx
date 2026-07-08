@@ -8,12 +8,14 @@ import {
 } from "lucide-react";
 
 import heroBanner from "@/assets/hero-banner.jpg";
+import smLogoAsset from "@/assets/sm-logistics-logo.jpeg.asset.json";
 import vPickupAsset from "@/assets/v-pickup.jpg.asset.json";
 import vEicherAsset from "@/assets/v-eicher.jpg.asset.json";
 import vContainerAsset from "@/assets/v-container.jpg.asset.json";
 import vClosedAsset from "@/assets/v-closed.jpg.asset.json";
 import vTempoAsset from "@/assets/v-tempo.jpg.asset.json";
 import vTrailerAsset from "@/assets/v-trailer.jpg.asset.json";
+const smLogo = smLogoAsset.url;
 const vPickup = vPickupAsset.url;
 const vEicher = vEicherAsset.url;
 const vContainer = vContainerAsset.url;
@@ -111,9 +113,11 @@ function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-2 min-w-0">
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-brand-foreground shadow-elegant">
-            <Truck className="h-6 w-6" />
-          </span>
+          <img
+            src={smLogo}
+            alt="SM Logistics logo"
+            className="h-11 w-11 shrink-0 rounded-xl object-contain bg-white shadow-elegant"
+          />
           <span className="flex flex-col leading-none min-w-0">
             <span className="truncate text-lg font-black text-brown">SM Logistics</span>
             <span className="truncate text-[10px] font-medium uppercase tracking-widest text-brand">Your Growth, Our Priority</span>
@@ -194,8 +198,8 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-brown/80 via-brown/30 to-transparent" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 pt-14 sm:px-6 lg:gap-12 lg:px-8 lg:pb-32 lg:pt-24">
-        <div className="text-white animate-drive-in">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-32 lg:pt-24">
+        <div className="text-white animate-drive-in lg:col-span-8">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider backdrop-blur">
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
             PAN India Logistics
@@ -229,6 +233,14 @@ function Hero() {
           <p className="mt-4 text-sm text-white/70">
             Or call / WhatsApp directly: <a href={PHONE_TEL} className="font-semibold text-brand underline underline-offset-4">{PHONE_DISPLAY}</a>
           </p>
+        </div>
+
+        <div className="lg:col-span-4 flex justify-center lg:justify-end animate-drive-in">
+          <img
+            src={smLogo}
+            alt="SM Logistics — Your Growth, Our Priority"
+            className="w-56 sm:w-72 lg:w-full max-w-sm rounded-3xl bg-white/95 p-6 shadow-elegant backdrop-blur"
+          />
         </div>
       </div>
 
@@ -583,9 +595,11 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div>
           <div className="flex items-center gap-2">
-            <span className="grid h-11 w-11 place-items-center rounded-xl bg-[image:var(--gradient-brand)]">
-              <Truck className="h-6 w-6 text-brand-foreground" />
-            </span>
+            <img
+              src={smLogo}
+              alt="SM Logistics logo"
+              className="h-11 w-11 rounded-xl object-contain bg-white p-1"
+            />
             <div>
               <p className="text-lg font-black">SM Logistics</p>
               <p className="text-[10px] font-medium uppercase tracking-widest text-brand">Your Growth, Our Priority</p>
