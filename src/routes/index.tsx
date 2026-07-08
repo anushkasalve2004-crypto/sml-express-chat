@@ -185,41 +185,61 @@ function Nav() {
 function Hero() {
   return (
     <section id="home" className="relative isolate overflow-hidden pt-24">
+      {/* Background */}
       <div className="absolute inset-0 -z-10 bg-brown">
         <img
-          src={smLogo}
-          alt="SM Logistics logo"
-          className="h-full w-full object-contain opacity-20"
+          src={heroBanner}
+          alt=""
+          aria-hidden
+          className="h-full w-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brown/90 via-brown/60 to-brown/40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brown via-brown/90 to-brown/70" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,88,12,0.35),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(234,88,12,0.25),transparent_50%)]" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-20 pt-14 sm:px-6 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-32 lg:pt-24">
-        <div className="text-white animate-drive-in lg:col-span-8">
+      {/* Decorative floating shapes */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand/25 blur-3xl animate-float" />
+        <div className="absolute top-1/3 -left-32 h-80 w-80 rounded-full bg-brand/20 blur-3xl animate-float [animation-delay:1.5s]" />
+        <div className="absolute bottom-10 right-1/4 h-64 w-64 rounded-full bg-white/10 blur-3xl animate-float [animation-delay:3s]" />
+        {/* Grid lines */}
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
+          }}
+        />
+      </div>
+
+      <div className="mx-auto max-w-5xl px-4 pb-24 pt-16 text-center sm:px-6 lg:px-8 lg:pb-36 lg:pt-28">
+        <div className="animate-drive-in text-white">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider backdrop-blur">
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
-            PAN India Logistics
+            PAN India Logistics • Trusted Since Day One
           </span>
-          <h1 className="mt-5 text-4xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
+          <h1 className="mt-6 text-4xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
             Complete Logistics Solutions{" "}
             <span className="bg-[image:var(--gradient-brand)] bg-clip-text text-transparent">
               That Drive Your Business Forward
             </span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-base text-white/85 sm:text-lg">
             Reliable • Efficient • On-Time Logistics Services Across India. Book your shipment in
             minutes — no paperwork, no complicated forms.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-              <a
-                href={WA_QUOTE_URL}
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href={WA_QUOTE_URL}
               className="inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-brand)] px-7 py-3.5 text-base font-semibold text-brand-foreground shadow-elegant transition hover:-translate-y-0.5 hover:shadow-glow"
             >
               Get Quote <ArrowRight className="h-5 w-5" />
             </a>
-              <a
-                href={WA_SIMPLE_URL}
+            <a
+              href={WA_SIMPLE_URL}
               className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-7 py-3.5 text-base font-semibold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5 hover:brightness-110"
             >
               <MessageCircle className="h-5 w-5" />
@@ -227,16 +247,31 @@ function Hero() {
             </a>
           </div>
           <p className="mt-4 text-sm text-white/70">
-            Or call / WhatsApp directly: <a href={PHONE_TEL} className="font-semibold text-brand underline underline-offset-4">{PHONE_DISPLAY}</a>
+            Or call / WhatsApp directly:{" "}
+            <a href={PHONE_TEL} className="font-semibold text-brand underline underline-offset-4">
+              {PHONE_DISPLAY}
+            </a>
           </p>
-        </div>
 
-        <div className="lg:col-span-4 flex justify-center lg:justify-end animate-drive-in">
-          <img
-            src={smLogo}
-            alt="SM Logistics — Your Growth, Our Priority"
-            className="w-56 sm:w-72 lg:w-full max-w-sm rounded-3xl bg-white/95 p-6 shadow-elegant backdrop-blur"
-          />
+          {/* Trust stats */}
+          <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
+            {[
+              { k: "PAN India", v: "Coverage" },
+              { k: "24×7", v: "Support" },
+              { k: "On-Time", v: "Delivery" },
+              { k: "Live", v: "Tracking" },
+            ].map((s) => (
+              <div
+                key={s.v}
+                className="rounded-2xl border border-white/15 bg-white/5 px-4 py-3 backdrop-blur-sm"
+              >
+                <p className="text-lg font-black text-brand sm:text-xl">{s.k}</p>
+                <p className="text-[11px] font-medium uppercase tracking-widest text-white/70">
+                  {s.v}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
