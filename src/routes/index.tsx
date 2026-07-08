@@ -6,7 +6,7 @@ import {
   Menu, X, ArrowRight, CheckCircle2, ChevronDown, Facebook,
   Instagram, Linkedin, Twitter, Plane, Container,
 } from "lucide-react";
-
+import heroBanner from "@/assets/hero-banner.jpg";
 import smLogo from "@/assets/sm-logistics-logo.jpg";
 import vPickup from "@/assets/v-pickup.jpg";
 import vEicher from "@/assets/v-eicher.jpg";
