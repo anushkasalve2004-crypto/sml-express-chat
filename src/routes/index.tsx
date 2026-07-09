@@ -9,9 +9,9 @@ import {
 import heroBanner from "@/assets/hero-banner.jpg";
 import smLogo from "@/assets/sm-logistics-logo.jpg";
 import vPickup from "@/assets/v-pickup.jpg";
-import vEicher from "@/assets/v-eicher.jpg";
-import vContainer from "@/assets/v-container.jpg";
-import vClosed from "@/assets/v-closed.jpg";
+import vclosed1 from "@/assets/v-closed1.jpg";
+import vclosed2 from "@/assets/v-closed2.jpg";
+import veicher from "@/assets/v-eicher.jpg";
 import vTempo from "@/assets/v-tempo.jpg";
 import vTrailer from "@/assets/v-trailer.jpg";
 
@@ -327,9 +327,9 @@ function Fleet() {
   const fleet = [
     { img: vPickup, name: "Pickup Truck", capacity: "Up to 1 Ton", suits: "Small parcels, local delivery" },
     { img: vTempo, name: "Mini Tempo", capacity: "500 kg – 1 Ton", suits: "City movement, e-commerce" },
-    { img: vEicher, name: "Eicher Truck", capacity: "3 – 9 Tons", suits: "Regional shipments" },
-    { img: vClosed, name: "Closed Body Truck", capacity: "5 – 15 Tons", suits: "Sensitive & weather-protected goods" },
-    { img: vContainer, name: "Container Truck", capacity: "20ft / 32ft", suits: "Bulk cargo, industrial goods" },
+    { img: vclosed1, name: "Closed Body Truck", capacity: "3 – 9 Tons", suits: "Regional shipments" },
+    { img: veicher, name: "Eicher Truck", capacity: "5 – 12 Tons", suits: "Sensitive & weather-protected goods" },
+    { img: vclosed2, name: "Closed Body Truck", capacity: "20ft / 32ft", suits: "Bulk cargo, industrial goods" },
     { img: vTrailer, name: "Heavy Container Trailer", capacity: "20 – 40 Tons", suits: "Heavy machinery, project cargo" },
   ];
   return (
