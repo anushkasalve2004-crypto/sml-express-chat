@@ -93,6 +93,7 @@ function Nav() {
   const links = [
     ["Home", "#home"],
     ["Services", "#services"],
+    ["Industries", "#industries"],
     ["Fleet", "#fleet"],
     ["About Us", "#about"],
     ["Why Choose Us", "#why"],
