@@ -647,9 +647,9 @@ function Footer() {
 
 <a href="#" aria-label="X">
   <img
-    src="/x-logo.png"
+    src="/x-logo.svg"
     alt="X"
-    className="h-4 w-4"
+    className="h-5 w-5"
   />
 </a>
           </div>
