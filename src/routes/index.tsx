@@ -633,11 +633,25 @@ function Footer() {
             Complete road transport, container and warehousing solutions across India — bookable in one WhatsApp message.
           </p>
           <div className="mt-5 flex gap-3">
-            {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
-              <a key={i} href="#" aria-label="social" className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/80 transition hover:border-brand hover:bg-brand hover:text-brand-foreground">
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
+            <a href="#" aria-label="Facebook">
+  <Facebook className="h-4 w-4" />
+</a>
+
+<a href="#" aria-label="Instagram">
+  <Instagram className="h-4 w-4" />
+</a>
+
+<a href="#" aria-label="LinkedIn">
+  <Linkedin className="h-4 w-4" />
+</a>
+
+<a href="#" aria-label="X">
+  <img
+    src="/x-logo.png"
+    alt="X"
+    className="h-4 w-4"
+  />
+</a>
           </div>
         </div>
 
