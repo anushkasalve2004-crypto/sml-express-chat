@@ -162,28 +162,29 @@ function Nav() {
               >
                 {label}
               </a>
+          
             ))}
-            <div className="hidden lg:flex items-center gap-5">
+           <div className="mt-3 border-t border-border pt-3">
 
   <div className="text-right leading-tight">
-    <p className="text-[13px] font-bold text-brown whitespace-nowrap">
+    <p className="text-[12px] font-bold text-brown whitespace-nowrap">
       ISO 9001:2015 | 14001 | 45001
     </p>
-    <p className="text-[11px] text-gray-500">
+    <p className="text-[10px] text-gray-500">
       Certified Logistics Company
     </p>
   </div>
-             
+      
+  <a
+    href={WA_SIMPLE_URL}
+    className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5 hover:brightness-110"
+  >
+    <MessageCircle className="h-4 w-4" />
+    Book Now
+  </a>
 
-            <a
-              href={WA_SIMPLE_URL}
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant"
-            >
-              <MessageCircle className="h-4 w-4" /> Book Now on WhatsApp
-            </a>
-            
-          </div>
-        </div>
+</div>
+</div>
       )}
     </header>
   );
@@ -233,7 +234,7 @@ function Hero() {
   
 
 
-</div>
+
 
           <h1 className="mt-6 text-4xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
             Complete Logistics Solutions{" "}
