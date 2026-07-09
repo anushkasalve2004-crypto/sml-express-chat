@@ -298,6 +298,7 @@ function Services() {
     { icon: Shield, title: "Safe Delivery", desc: "GPS-tracked, insured and handled with care from pickup to drop.", tags: ["GPS Tracking", "Secure", "On-Time"] },
   ];
   return (
+    <>
     <section id="services" className="relative bg-secondary py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
@@ -415,6 +416,7 @@ function Services() {
     </div>
   </div>
 </section>
+    </>
   );
 }
 
