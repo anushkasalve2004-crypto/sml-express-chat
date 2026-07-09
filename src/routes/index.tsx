@@ -15,7 +15,7 @@ import veicher from "@/assets/v-eicher.jpg";
 import vTempo from "@/assets/v-tempo.jpg";
 import vTrailer from "@/assets/v-trailer.jpg";
 import vopen from "@/assets/v-open.jpg";
-
+import over from "@/assets/v-over.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -339,9 +339,10 @@ function Fleet() {
     { img: vTempo, name: "Mini Tempo", capacity: "500 kg – 1 Ton", suits: "City movement, e-commerce" },
     { img: vclosed1, name: "Closed Body Truck", capacity: "3 – 9 Tons", suits: "Regional shipments" },
     { img: veicher, name: "Eicher Truck", capacity: "5 – 12 Tons", suits: "Sensitive & weather-protected goods" },
-    { img: vclosed2, name: "Closed Body Truck", capacity: "20ft / 32ft", suits: "Bulk cargo, industrial goods" },
+    { img: vclosed2, name: "Closed Body Truck", capacity: "SXL 09 TON/ MXL 15 TON ", suits: "Bulk cargo, industrial goods" },
     { img: vTrailer, name: "Heavy Container Trailer", capacity: "20 – 40 Tons", suits: "Heavy machinery, project cargo" },
     { img: vopen, name: "Top Open Body Truck", capacity: "07 – 35 Tons", suits: "Industrial and Manufacturer" },
+    { img: vover, name: "Over Dimension Cargo (ODC)", capacity: "10 – 18 Tons", suits: "Industrial equipment and Heavy machinery" }
   ];
   return (
     <section id="fleet" className="py-24">
