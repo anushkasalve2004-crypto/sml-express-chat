@@ -185,7 +185,7 @@ function Hero() {
           src={heroBanner}
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-80"
+          className="h-full w-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 bg-gradient-to-br from-black/25 via-black/20 to-black/35" />
