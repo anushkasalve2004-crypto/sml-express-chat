@@ -329,6 +329,92 @@ function Services() {
         </div>
       </div>
     </section>
+    <section id="industries" className="bg-white py-24">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+    <div className="text-center mb-16">
+      <h2 className="text-4xl sm:text-5xl font-black text-gray-900">
+        Industries We Serve
+      </h2>
+
+      <p className="mt-5 text-lg text-gray-600 max-w-3xl mx-auto">
+        SM Logistics provides reliable transportation and logistics
+        solutions across multiple industries with safe, timely and
+        efficient delivery throughout India.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10">
+
+      <div className="text-center">
+        <img
+          src="/industries/fmcg.png"
+          alt="FMCG"
+          className="w-44 h-44 mx-auto object-contain"
+        />
+        <p className="mt-4 text-lg font-medium">
+          FMCG & Retail Distribution
+        </p>
+      </div>
+
+      <div className="text-center">
+        <img
+          src="/industries/automotive.png"
+          alt="Automotive"
+          className="w-44 h-44 mx-auto object-contain"
+        />
+        <p className="mt-4 text-lg font-medium">
+          Automotive & Spare Parts
+        </p>
+      </div>
+
+      <div className="text-center">
+        <img
+          src="/industries/chemical.png"
+          alt="Chemicals"
+          className="w-44 h-44 mx-auto object-contain"
+        />
+        <p className="mt-4 text-lg font-medium">
+          Chemicals & Construction Materials
+        </p>
+      </div>
+
+      <div className="text-center">
+        <img
+          src="/industries/ecommerce.png"
+          alt="E-commerce"
+          className="w-44 h-44 mx-auto object-contain"
+        />
+        <p className="mt-4 text-lg font-medium">
+          E-commerce & Warehousing
+        </p>
+      </div>
+
+      <div className="text-center">
+        <img
+          src="/industries/manufacturing.png"
+          alt="Manufacturing"
+          className="w-44 h-44 mx-auto object-contain"
+        />
+        <p className="mt-4 text-lg font-medium">
+          Manufacturing & Industrial Goods
+        </p>
+      </div>
+
+      <div className="text-center">
+        <img
+          src="/industries/pharma.png"
+          alt="Pharmaceuticals"
+          className="w-44 h-44 mx-auto object-contain"
+        />
+        <p className="mt-4 text-lg font-medium">
+          Pharmaceuticals & Healthcare
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
   );
 }
 
