@@ -224,6 +224,7 @@ function Hero() {
     Certified Logistics Company
   </p>
 </div>
+</div>
 
 </div>
 
