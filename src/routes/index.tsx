@@ -226,7 +226,7 @@ function Hero() {
     </p>
   </div>
 </div>
-</div>
+
           <h1 className="mt-6 text-4xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
             Complete Logistics Solutions{" "}
             <span className="bg-[image:var(--gradient-brand)] bg-clip-text text-transparent">
