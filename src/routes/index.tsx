@@ -185,9 +185,11 @@ function Nav() {
 
 </div>
 </div>
-      )}
-    </header>
-  );
+          
+</div>
+)}
+</header>
+);
 }
       
 
