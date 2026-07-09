@@ -218,10 +218,10 @@ function Hero() {
           </span>
           <div className="absolute top-24 right-10 z-30 hidden lg:block text-right">
   <h3 className="text-white text-2xl font-bold">
-    ISO 9001 | 14001 | 45001
+    ISO 9001:2015 
   </h3>
   <p className="text-white text-lg font-semibold">
-    Certified Company
+    Certified  Logistics Company
   </p>
 </div>
 </div>
