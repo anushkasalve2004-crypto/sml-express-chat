@@ -635,19 +635,39 @@ function Footer() {
             Complete road transport, container and warehousing solutions across India — bookable in one WhatsApp message.
           </p>
           <div className="mt-5 flex gap-3">
-            <a href="#" aria-label="Facebook">
+  <a
+  href="https://facebook.com/smlogisticsinfo"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Facebook"
+>
   <Facebook className="h-4 w-4" />
 </a>
 
-<a href="#" aria-label="Instagram">
+<a
+  href="https://www.instagram.com/smlogisticsinfo"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram"
+>
   <Instagram className="h-4 w-4" />
 </a>
 
-<a href="#" aria-label="LinkedIn">
+<a
+  href="https://www.linkedin.com/company/smlogisticsinf0/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn"
+>
   <Linkedin className="h-4 w-4" />
 </a>
 
-<a href="#" aria-label="X">
+<a
+  href="https://x.com/smlogisticsinfo"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="X"
+>
   <img
     src="/x-logo.png"
     alt="X"
