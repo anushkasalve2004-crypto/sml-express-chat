@@ -711,6 +711,14 @@ function Footer() {
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /> PAN India</li>
           </ul>
           <a
+  href="https://share.google/2vXqzhx1A4iPVhyg5"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-flex items-center gap-2 rounded-full border border-yellow-400 px-4 py-2 text-sm font-semibold text-yellow-400 hover:bg-yellow-400 hover:text-black transition"
+>
+  ⭐ Please Review on Google
+</a>
+          <a
             href={WA_SIMPLE_URL}
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant transition hover:-translate-y-0.5"
           >
