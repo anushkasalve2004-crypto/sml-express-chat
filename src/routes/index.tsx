@@ -185,11 +185,11 @@ function Hero() {
           src={heroBanner}
           alt=""
           aria-hidden
-          className="h-full w-full object-cover opacity-40"
+          className="h-full w-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-brown via-brown/90 to-brown/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,88,12,0.35),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(234,88,12,0.25),transparent_50%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-black/30 to-black/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,88,12,0.15),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(234,88,12,0.10),transparent_50%)]" />
       </div>
 
       {/* Decorative floating shapes */}
