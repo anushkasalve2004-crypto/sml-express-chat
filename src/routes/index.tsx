@@ -332,7 +332,7 @@ function Fleet() {
     { img: veicher, name: "Eicher Truck", capacity: "5 – 12 Tons", suits: "Sensitive & weather-protected goods" },
     { img: vclosed2, name: "Closed Body Truck", capacity: "20ft / 32ft", suits: "Bulk cargo, industrial goods" },
     { img: vTrailer, name: "Heavy Container Trailer", capacity: "20 – 40 Tons", suits: "Heavy machinery, project cargo" },
-    { img: vopen, name: "Top Open Body Truck", capacity: "07 – 35 Tons", suits: "Suitable for Industrial and Manufacturer" }
+    { img: vopen, name: "Top Open Body Truck", capacity: "07 – 35 Tons", suits: "Suitable for Industrial and Manufacturer" },
   ];
   return (
     <section id="fleet" className="py-24">
