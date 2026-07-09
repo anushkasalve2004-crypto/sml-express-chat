@@ -698,7 +698,7 @@ function Footer() {
         <div>
           <p className="text-sm font-bold uppercase tracking-widest text-brand">Services</p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
-            {["Road Transport (FTL/PTL)", "Container Services", "Warehousing", "Safe Delivery", "Multi-modal Transport"].map((s) => (
+            {["Road Transport (FTL/PTL)", "Container Services", "Over Dimension Cargo(ODC)", "Safe Delivery", "Multi-modal Transport"].map((s) => (
               <li key={s}><a href="#services" className="transition hover:text-brand">{s}</a></li>
             ))}
           </ul>
