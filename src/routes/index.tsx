@@ -169,6 +169,14 @@ function Nav() {
             >
               <MessageCircle className="h-4 w-4" /> Book Now on WhatsApp
             </a>
+            <div className="hidden lg:flex flex-col items-end mr-4">
+  <p className="text-xs font-bold text-brown">
+    ISO 9001:2015
+  </p>
+  <p className="text-[10px] text-gray-600">
+    Certified Logistics Company
+  </p>
+</div>
           </div>
         </div>
       )}
@@ -216,14 +224,7 @@ function Hero() {
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
             PAN India Logistics • Trusted Since Day One
           </span>
-  <div className="absolute top-6 right-4 z-50 text-right">
-  <p className="text-white text-xs sm:text-sm font-bold">
-    ISO 9001 | 14001 | 45001
-  </p>
-  <p className="text-white text-[10px] sm:text-xs">
-    Certified Logistics Company
-  </p>
-</div>
+  
 
 
 </div>
