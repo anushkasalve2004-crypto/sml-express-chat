@@ -15,7 +15,7 @@ import veicher from "@/assets/v-eicher.jpg";
 import vTempo from "@/assets/v-tempo.jpg";
 import vTrailer from "@/assets/v-trailer.jpg";
 import vopen from "@/assets/v-open.jpg";
-import over from "@/assets/v-over.jpg";
+import vover from "@/assets/v-over.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
