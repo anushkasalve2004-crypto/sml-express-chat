@@ -214,6 +214,14 @@ function Hero() {
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
             PAN India Logistics • Trusted Since Day One
           </span>
+          <div className="mt-4 flex justify-center">
+  <div className="inline-flex items-center gap-2 rounded-full border border-brand bg-white/10 px-5 py-2 text-white">
+    <span className="text-brand">✔</span>
+    <span className="font-semibold">
+      ISO 9001:2015 Certified Logistics Company
+    </span>
+  </div>
+</div>
           <h1 className="mt-6 text-4xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
             Complete Logistics Solutions{" "}
             <span className="bg-[image:var(--gradient-brand)] bg-clip-text text-transparent">
