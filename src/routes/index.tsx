@@ -714,7 +714,7 @@ function Footer() {
   href="https://share.google/2vXqzhx1A4iPVhyg5"
   target="_blank"
   rel="noopener noreferrer"
-  className="mt-4 inline-flex items-center gap-2 rounded-full border border-yellow-400 px-4 py-2 text-sm font-semibold text-yellow-400 hover:bg-yellow-400 hover:text-black transition"
+  className="mt-4 inline-flex items-center gap-2 rounded-full border border-brown-400 px-4 py-2 text-sm font-semibold text-white-400 hover:bg-brown-400 hover:text-white transition"
 >
   ⭐ Please Review on Google
 </a>
