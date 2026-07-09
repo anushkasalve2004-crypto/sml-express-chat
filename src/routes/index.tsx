@@ -342,7 +342,7 @@ function Fleet() {
     { img: vclosed2, name: "Closed Body Truck", capacity: "SXL 09 TON/ MXL 15 TON ", suits: "Bulk cargo, industrial goods" },
     { img: vTrailer, name: "Heavy Container Trailer", capacity: "20 – 40 Tons", suits: "Heavy machinery, project cargo" },
     { img: vopen, name: "Top Open Body Truck", capacity: "07 – 35 Tons", suits: "Industrial and Manufacturer" },
-    { img: vover, name: "Over Dimension Cargo (ODC)", capacity: "10 – 18 Tons", suits: "Industrial equipment and Heavy machinery" }
+    { img: vover, name: "Over Dimension Cargo (ODC)", capacity: "10 – 18 Tons", suits: "Industrial equipment and Heavy machinery" },
   ];
   return (
     <section id="fleet" className="py-24">
