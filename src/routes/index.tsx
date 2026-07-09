@@ -163,20 +163,20 @@ function Nav() {
                 {label}
               </a>
             ))}
-            <a
-              href={WA_SIMPLE_URL}
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant"
-            >
-              <MessageCircle className="h-4 w-4" /> Book Now on WhatsApp
-            </a>
-            <div className="hidden lg:flex flex-col items-end mr-4">
-  <p className="text-xs font-bold text-brown">
+             <p className="text-xs font-bold text-brown">
     ISO 9001:2015
   </p>
   <p className="text-[10px] text-gray-600">
     Certified Logistics Company
   </p>
 </div>
+            <a
+              href={WA_SIMPLE_URL}
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant"
+            >
+              <MessageCircle className="h-4 w-4" /> Book Now on WhatsApp
+            </a>
+            
           </div>
         </div>
       )}
