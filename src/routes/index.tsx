@@ -284,7 +284,7 @@ function Services() {
   const items = [
     { icon: Truck, title: "Road Transport", desc: "Full Load (FTL) & Part Load (PTL) across every state in India.", tags: ["FTL", "PTL"] },
     { icon: Container, title: "Container Services", desc: "FCL, LCL and multi-modal container movement from port to door.", tags: ["FCL", "LCL", "Multi-modal"] },
-    { icon: Warehouse, title: "Warehousing", desc: "Inventory management, storage and distribution from strategic hubs.", tags: ["Inventory", "Distribution", "Storage"] },
+    {icon: Warehouse,title: "Over Dimension Cargo (ODC)", desc: "Handling oversized cargo requires expertise and specialized equipment. SM Logistics provides Over Dimension Cargo (ODC) services, ensuring compliance with transport regulations and safe delivery.", tags: ["ODC", "Heavy Cargo", "Safe Transport"] },
     { icon: Shield, title: "Safe Delivery", desc: "GPS-tracked, insured and handled with care from pickup to drop.", tags: ["GPS Tracking", "Secure", "On-Time"] },
   ];
   return (
