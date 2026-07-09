@@ -216,7 +216,7 @@ function Hero() {
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
             PAN India Logistics • Trusted Since Day One
           </span>
-         <div className="absolute top-6 right-4 z-50 text-right">
+  <div className="absolute top-6 right-4 z-50 text-right">
   <p className="text-white text-xs sm:text-sm font-bold">
     ISO 9001 | 14001 | 45001
   </p>
@@ -282,6 +282,9 @@ function Hero() {
           </div>
         </div>
       </div>
+    </section>
+    );
+}
 
 
 
