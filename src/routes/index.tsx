@@ -216,13 +216,16 @@ function Hero() {
             <span className="h-2 w-2 rounded-full bg-brand shadow-glow" />
             PAN India Logistics • Trusted Since Day One
           </span>
-          <div className="mt-4 flex justify-center">
-  <div className="inline-flex items-center gap-2 rounded-full border border-brand bg-white/10 px-5 py-2 text-white">
-    <span className="text-brand">✔</span>
-    <span className="font-semibold">
-      ISO 9001:2015 Certified Logistics Company
-    </span>
+          <div className="absolute top-6 right-6 z-30">
+  <div className="bg-white/90 backdrop-blur-md rounded-xl px-5 py-4 shadow-xl text-right">
+    <p className="text-xl font-extrabold text-brown">
+     ISO 9001:2015 
+    </p>
+    <p className="text-sm font-semibold text-gray-700">
+      Certified Logistics Company
+    </p>
   </div>
+</div>
 </div>
           <h1 className="mt-6 text-4xl font-black leading-[1.05] sm:text-5xl lg:text-7xl">
             Complete Logistics Solutions{" "}
