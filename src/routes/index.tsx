@@ -163,13 +163,18 @@ function Nav() {
                 {label}
               </a>
             ))}
-             <p className="text-xs font-bold text-brown">
-    ISO 9001:2015
-  </p>
-  <p className="text-[10px] text-gray-600">
-    Certified Logistics Company
-  </p>
-</div>
+            <div className="hidden lg:flex items-center gap-5">
+
+  <div className="text-right leading-tight">
+    <p className="text-[13px] font-bold text-brown whitespace-nowrap">
+      ISO 9001:2015 | 14001 | 45001
+    </p>
+    <p className="text-[11px] text-gray-500">
+      Certified Logistics Company
+    </p>
+  </div>
+             
+
             <a
               href={WA_SIMPLE_URL}
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-whatsapp-foreground shadow-elegant"
@@ -183,6 +188,7 @@ function Nav() {
     </header>
   );
 }
+      
 
 // ------------- Hero --------------
 function Hero() {
