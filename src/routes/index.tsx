@@ -4,7 +4,8 @@ import {
   Truck, Package, Warehouse, Shield, MapPin, Clock, Headphones, Lock,
   IndianRupee, UserCheck, Radio, Smile, Phone, Mail, MessageCircle,
   Menu, X, ArrowRight, CheckCircle2, ChevronDown, Facebook,
-  Instagram, Linkedin, Twitter, Plane, Container,
+  Instagram, Linkedin, Plane, Container,
+
 } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 import smLogo from "@/assets/sm-logistics-logo.jpg";
@@ -782,11 +783,7 @@ function Footer() {
   rel="noopener noreferrer"
   aria-label="X"
 >
-  <img
-    src="/x-logo.png"
-    alt="X"
-    className="h-5 w-5 object-contain"
-  />
+  <X className="h-4 w-4" />
 </a>
           </div>
         </div>
